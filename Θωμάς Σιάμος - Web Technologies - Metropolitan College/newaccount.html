@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoL Prodigy - Create Account</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="Season_2019_-_Master_1.webp" type="image/webp">
+  
+  <!-- Internal styles for account creation form -->
+<style>
+    .account-container {
+      max-width: 400px;
+      margin: 80px auto;
+      background: #252f4a;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .account-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f5a623;
+    }
+    .account-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .account-container form input {
+      padding: 10px;
+      border: 1px solid #3a4566;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .account-container form button {
+      padding: 10px;
+      background: #f5a623;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: #1a2238;
+    }
+    .account-container .back-link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+    .account-container .back-link a {
+      color: #f5a623;
+      text-decoration: none;
+    }
+  </style>
+  <!-- Script to handle account form submission -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const createForm = document.querySelector('.account-container form');
+      createForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // After account creation, redirect to login page
+        window.location.href = "login.html";
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="nav-container container">
+      <div class="logo">
+        <img src="Season_2019_-_Master_1.webp" alt="LoL Prodigy Logo">
+        <h1>LoL Prodigy</h1>
+      </div>
+      <nav>
+        <button class="nav-toggle">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="champs.html">Champions</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="lanes.html">Lanes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <section class="account-section">
+      <div class="account-container">
+        <h2>Create Account</h2>
+        <form action="#" method="post">
+          <input type="text" placeholder="Username" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <button type="submit">Create Account</button>
+        </form>
+        <div class="back-link">
+          <a href="login.html">Back to Login</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2025 LoL Prodigy - Built by Thomas Siamos</p>
+    <p>All images and videos are intellectual property of <a href="https://www.riotgames.com" style="color: red; text-decoration: none;">Riot Games</a></p>
+  </footer>
+</body>
+</html>

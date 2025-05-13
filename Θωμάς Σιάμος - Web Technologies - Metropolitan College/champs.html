@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Prodigy - Champions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="Season_2019_-_Master_1.webp" type="image/webp"> 
+    <!-- Script to handle navigation toggle -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('nav ul');
+            toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="Season_2019_-_Master_1.webp" alt="LoL Prodigy Logo">
+                <h1>LoL Prodigy</h1>
+            </div>
+            <nav>
+                <button class="nav-toggle">☰</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="champs.html">Champions</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="lanes.html">Lanes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Meta Champions</h2>
+            <p class="section-subtitle">Top picks for Patch 15.6 to dominate your games.</p>
+            <table>
+                <tr>
+                    <th>Champion</th>
+                    <th>Role</th>
+                    <th>Win Rate</th>
+                    <th>Core Item</th>
+                </tr>
+                <tr>
+                    <td><img src="images/darius.webp" alt="Darius"> Darius</td>
+                    <td>Top</td>
+                    <td>52.5%</td>
+                    <td>Stridebreaker</td>
+                </tr>
+                <tr>
+                    <td><img src="images/xinzao.jpg" alt="Xin Zhao"> Xin Zhao</td>
+                    <td>Jungle</td>
+                    <td>53.0%</td>
+                    <td>Sunfire Aegis</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ekko.jpg" alt="Ekko"> Ekko</td>
+                    <td>Mid</td>
+                    <td>52.1%</td>
+                    <td>Hextech Rocketbelt</td>
+                </tr>
+                <tr>
+                    <td><img src="images/jhin.png" alt="Jhin"> Jhin</td>
+                    <td>Bot</td>
+                    <td>51.8%</td>
+                    <td>Galeforce</td>
+                </tr>
+                <tr>
+                    <td><img src="images/SorakaSquare.webp" alt="Soraka"> Soraka</td>
+                    <td>Support</td>
+                    <td>52.0%</td>
+                    <td>Moonstone Renewer</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 LoL Prodigy - Built by Thomas Siamos</p>
+        <p>All images and videos are intellectual property of 
+            <a href="https://www.riotgames.com" style="color: red; text-decoration: none;">Riot Games</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoL Prodigy - Win More</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="Season_2019_-_Master_1.webp" type="image/webp"> 
+  
+  <!-- Internal CSS for Beginner Tips section -->
+<style>
+    .beginner-tips {
+      background-color: #252f4a; /* Dark background as specified */
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      color: #ffffff; /* White default text */
+    }
+    .beginner-tips h2 {
+      color: #f5a623; /* Title color as specified */
+    }
+    .beginner-tips ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .beginner-tips ul ul {
+      list-style-type: circle;
+      margin-left: 20px;
+    }
+  </style>
+  <!-- Navigation and search functionalities -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Navigation toggle functionality
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => nav.classList.toggle('active'));
+
+      // Search functionality for op.gg
+      const searchBtn = document.querySelector('.search-btn');
+      const summonerInput = document.querySelector('.summoner-lookup input');
+
+      function performSearch() {
+        const summoner = summonerInput.value.trim();
+        if (!summoner.includes('#')) {
+          alert("Please include a hashtag (#) in your summoner name.");
+          return;
+        }
+        const encodedSummoner = encodeURIComponent(summoner);
+        window.location.href = `https://na.op.gg/summoner/userName=${encodedSummoner}`;
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      summonerInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="nav-container container">
+      <div class="logo">
+        <img src="Season_2019_-_Master_1.webp" alt="LoL Prodigy Logo">
+        <h1>LoL Prodigy</h1>
+      </div>
+      <nav>
+        <button class="nav-toggle">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="champs.html">Champions</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="lanes.html">Lanes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="rg-brand-cinematic.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h2>Win More in <span>League of Legends</span></h2>
+      <p>LoL Prodigy is your all-in-one companion to improve and climb in Patch 15.6.</p>
+      <div class="summoner-lookup">
+        <input type="text" placeholder="Game Name #Tag or Champion">
+        <button class="search-btn">Search</button>
+      </div>
+      <a href="https://account.riotgames.com/" class="riot-signin-btn">
+        <img src="images/image.webp" alt="Riot Logo" class="riot-logo">
+        Sign in with Riot ID
+      </a>
+    </div>
+  </section>
+
+  <main class="container">
+    
+    <section>
+      <h2>Featured Champions</h2>
+      <p class="section-subtitle">Looking to try a new champion? Here are some top picks!</p>
+      <div class="grid">
+        <div class="card-wrapper">
+          <div class="card" style="background-image: url('images/ambessa-splash.png');">
+            <div class="card-content">
+              <h3>Ambessa</h3>
+              <p>Matriarch of War</p>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="difficulty difficulty-average">Average</span>
+            <p class="stats">Winrate: 51.8% | Lane: Top</p>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card" style="background-image: url('images/teemo-splash.png');">
+            <div class="card-content">
+              <h3>Teemo</h3>
+              <p>The Swift Scout</p>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="difficulty difficulty-easy">Easy</span>
+            <p class="stats">Winrate: 50.5% | Lane: Top</p>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card" style="background-image: url('images/swain-splash.png');">
+            <div class="card-content">
+              <h3>Swain</h3>
+              <p>The Noxian Grand General</p>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="difficulty difficulty-average">Average</span>
+            <p class="stats">Winrate: 52.1% | Lane: Mid/Support</p>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card" style="background-image: url('images/smolder-splash.png');">
+            <div class="card-content">
+              <h3>Smolder</h3>
+              <p>The Fiery Fledgling</p>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="difficulty difficulty-average">Average</span>
+            <p class="stats">Winrate: 51.3% | Lane: Bot</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section>
+      <h2>What's Dominating the Meta?</h2>
+      <p class="section-subtitle">Patch 15.6 top picks to optimize your climb.</p>
+      <table>
+        <tr>
+          <th>Top</th>
+          <th>Jungle</th>
+          <th>Mid</th>
+          <th>Bot</th>
+          <th>Support</th>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/top.svg" alt="Top Lane" class="lane-icon">
+            <img src="images/darius.webp" alt="Darius"> Darius
+          </td>
+          <td>
+            <img src="images/jung.svg" alt="Jungle Lane" class="lane-icon">
+            <img src="images/xinzao.jpg" alt="Xin Zhao"> Xin Zhao
+          </td>
+          <td>
+            <img src="images/mid.svg" alt="Mid Lane" class="lane-icon">
+            <img src="images/ekko.jpg" alt="Ekko"> Ekko
+          </td>
+          <td>
+            <img src="images/bot.svg" alt="Bot Lane" class="lane-icon">
+            <img src="images/jhin.png" alt="Jhin"> Jhin
+          </td>
+          <td>
+            <img src="images/supp.svg" alt="Support Lane" class="lane-icon">
+            <img src="images/SorakaSquare.webp" alt="Soraka"> Soraka
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/top.svg" alt="Top Lane" class="lane-icon">
+            <img src="images/PoppySquare.webp" alt="Poppy"> Poppy
+          </td>
+          <td>
+            <img src="images/jung.svg" alt="Jungle Lane" class="lane-icon">
+            <img src="images/WukongSquare.webp" alt="Wukong"> Wukong
+          </td>
+          <td>
+            <img src="images/mid.svg" alt="Mid Lane" class="lane-icon">
+            <img src="images/VladimirSquare.webp" alt="Vladimir"> Vladimir
+          </td>
+          <td>
+            <img src="images/bot.svg" alt="Bot Lane" class="lane-icon">
+            <img src="images/MissFortuneSquare.webp" alt="Miss Fortune"> Miss Fortune
+          </td>
+          <td>
+            <img src="images/supp.svg" alt="Support Lane" class="lane-icon">
+            <img src="images/BraumSquare.webp" alt="Braum"> Braum
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/top.svg" alt="Top Lane" class="lane-icon">
+            <img src="images/GwenSquare.webp" alt="Gwen"> Gwen
+          </td>
+          <td>
+            <img src="images/jung.svg" alt="Jungle Lane" class="lane-icon">
+            <img src="images/EvelynnSquare.webp" alt="Evelynn"> Evelynn
+          </td>
+          <td>
+            <img src="images/mid.svg" alt="Mid Lane" class="lane-icon">
+            <img src="images/AhriSquare.webp" alt="Ahrui"> Ahri
+          </td>
+          <td>
+            <img src="images/bot.svg" alt="Bot Lane" class="lane-icon">
+            <img src="images/Kai'Sa.webp" alt="Kai'Sa"> Kai'Sa
+          </td>
+          <td>
+            <img src="images/supp.svg" alt="Support Lane" class="lane-icon">
+            <img src="images/NeekoSquare.webp  " alt="Neeko"> Neeko
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    
+    <section class="beginner-tips">
+      <h2>Beginner Tips</h2>
+      <p class="section-subtitle">Start your journey with these essential tips:</p>
+      <ul>
+        <li>Getting Started
+          <ul>
+            <li>Learn basic controls</li>
+            <li>Familiarize yourself with the map</li>
+            <li>Practice last hitting minions</li>
+          </ul>
+        </li>
+        <li>In-Game Strategy
+          <ul>
+            <li>Ward key areas for vision</li>
+            <li>Communicate with your team</li>
+            <li>Focus on objectives</li>
+          </ul>
+        </li>
+        <li>Post-Game Improvement
+          <ul>
+            <li>Review your gameplay</li>
+            <li>Watch tutorials and pro matches</li>
+            <li>Practice consistently</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 LoL Prodigy - Built by Thomas Siamos</p>
+    <p>All images and videos are intellectual property of <a href="https://www.riotgames.com" style="color: red; text-decoration: none;">Riot Games</a></p>
+  </footer>
+</body>
+</html>

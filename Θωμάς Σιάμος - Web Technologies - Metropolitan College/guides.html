@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Prodigy - Guides</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="Season_2019_-_Master_1.webp" type="image/webp"> 
+    <!-- Navigation toggle script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('nav ul');
+            toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="Season_2019_-_Master_1.webp" alt="LoL Prodigy Logo">
+                <h1>LoL Prodigy</h1>
+            </div>
+            <nav>
+                <button class="nav-toggle">☰</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="champs.html">Champions</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="lanes.html">Lanes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Gameplay Guides</h2>
+            <p class="section-subtitle">Master the fundamentals to climb faster.</p>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/untitled-design-2025-03-28.png" alt="Wave Management">
+                    <h3>Wave Management</h3>
+                    <ul>
+                        <li>Freeze: Keep 3-4 enemy minions for CS lead.</li>
+                        <li>Slow Push: Crash at 3:00 for roam timing.</li>
+                        <li>Fast Push: Clear by 1:30 for reset.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="images/baron.png" alt="Objectives">
+                    <h3>Objective Control</h3>
+                    <ul>
+                        <li>Drake: Ward at 4:30, take at 5:00.</li>
+                        <li>Baron: Vision at 24:00, secure at 25:00.</li>
+                        <li>Herald: Pre-14:00 for 400g.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="images/fight.png" alt="Teamfight">
+                    <h3>Teamfight Basics</h3>
+                    <ul>
+                        <li>ADC: Position at 700 range.</li>
+                        <li>Tank: Engage with CC (e.g., Leona).</li>
+                        <li>Mage: Burst priority targets (e.g., Ekko).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 LoL Prodigy - Built by Thomas Siamos</p>
+        <p>All images and videos are intellectual property of 
+            <a href="https://www.riotgames.com" style="color: red; text-decoration: none;">Riot Games</a>
+        </p>
+    </footer>
+</body>
+</html>

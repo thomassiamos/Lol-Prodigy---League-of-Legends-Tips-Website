@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Prodigy - Lanes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="Season_2019_-_Master_1.webp" type="image/webp"> 
+    <!-- Navigation toggle interaction -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('nav ul');
+            toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="Season_2019_-_Master_1.webp" alt="LoL Prodigy Logo">
+                <h1>LoL Prodigy</h1>
+            </div>
+            <nav>
+                <button class="nav-toggle">☰</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="champs.html">Champions</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="lanes.html">Lanes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Lane Roles</h2>
+            <p class="section-subtitle">Understand each role and its meta champions.</p>
+            <div class="grid">
+                <div class="card" style="background-image: url('images/top.png');">
+                    <div class="card-content">
+                        <h3>Top Lane</h3>
+                        <p>Fighter/Tank - Win lane, split push.</p>
+                        <p><strong>Meta:</strong> Darius (52.5% WR)</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('images/jungle.png')">
+                    <div class="card-content">
+                        <h3>Jungle</h3>
+                        <p>Ganker/Tank - Secure objectives.</p>
+                        <p><strong>Meta:</strong> Xin Zhao (53.0% WR)</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('images/ekko.jpg')">
+                    <div class="card-content">
+                        <h3>Mid Lane</h3>
+                        <p>Mage/Assassin - Burst, roam.</p>
+                        <p><strong>Meta:</strong> Ekko (52.1% WR)</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('images/adc.png')">
+                    <div class="card-content">
+                        <h3>Bot Lane</h3>
+                        <p>Marksman - Farm, deal DPS.</p>
+                        <p><strong>Meta:</strong> Jhin (51.8% WR)</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('images/support.png')">
+                    <div class="card-content">
+                        <h3>Support</h3>
+                        <p>Protector - Ward, enable ADC.</p>
+                        <p><strong>Meta:</strong> Soraka (52.0% WR)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 LoL Prodigy - Built by Thomas Siamos</p>
+        <p>All images and videos are intellectual property of 
+            <a href="https://www.riotgames.com" style="color: red; text-decoration: none;">Riot Games</a>
+        </p>
+    </footer> 
+</body>
+</html>

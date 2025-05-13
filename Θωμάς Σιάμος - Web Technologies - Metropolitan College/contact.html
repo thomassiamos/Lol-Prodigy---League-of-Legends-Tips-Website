@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Prodigy - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="Season_2019_-_Master_1.webp" type="image/webp"> 
+    <!-- Script for responsive navigation -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('nav ul');
+            toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container container">
+            <div class="logo">
+                <img src="Season_2019_-_Master_1.webp" alt="LoL Prodigy Logo">
+                <h1>LoL Prodigy</h1>
+            </div>
+            <nav>
+                <button class="nav-toggle">☰</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="champs.html">Champions</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="lanes.html">Lanes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Contact Us</h2>
+            <p class="section-subtitle">Have questions or feedback? Reach out!</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Questions or feedback..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 LoL Prodigy - Built by Thomas Siamos</p>
+        <p>All images and videos are intellectual property of 
+            <a href="https://www.riotgames.com" style="color: red; text-decoration: none;">Riot Games</a>
+        </p>
+    </footer>
+</body>
+</html>
